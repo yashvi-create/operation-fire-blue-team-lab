@@ -44,7 +44,7 @@ Skills Demonstrated:
 ## Screenshots
 
 ### Sysmon Operational Logs
-![Sysmon Logs](sysmon_operational_logs.png)
+![Sysmon Logs](sysmon_operational_logs.png.png)
 
 ### Suspicious Account Creation
 ![Account Creation](account_creation_event.png)

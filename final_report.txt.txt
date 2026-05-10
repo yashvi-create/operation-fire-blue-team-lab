@@ -1,0 +1,40 @@
+Operation Fire – Blue Team Investigation Report
+
+Analyst:
+Yashvi Thakar
+
+Objective:
+Simulate and investigate suspicious endpoint activity in a Blue Team cybersecurity environment.
+
+Environment:
+- Windows endpoint
+- Kali Linux virtual machine
+- Sysmon monitoring
+- PowerShell activity investigation
+- Event Viewer analysis
+
+Activities Performed:
+1. Created simulated confidential company data.
+2. Simulated suspicious local account creation.
+3. Executed encoded PowerShell command.
+4. Installed Sysmon endpoint monitoring.
+5. Investigated endpoint telemetry using Event Viewer.
+6. Collected evidence screenshots and process logs.
+
+Detected Indicators:
+- Unauthorized local account creation
+- Encoded PowerShell execution
+- Multiple process creation events
+- Process termination events
+
+Monitoring Tools Used:
+- Sysmon
+- Windows Event Viewer
+- PowerShell
+- Kali Linux VM
+
+Findings:
+Sysmon successfully captured endpoint telemetry and suspicious process activity. Event Viewer logs confirmed process creation and termination events related to PowerShell activity.
+
+Conclusion:
+The Blue Team environment successfully simulated endpoint monitoring and suspicious activity investigation. Logs and screenshots were collected as evidence for incident analysis.

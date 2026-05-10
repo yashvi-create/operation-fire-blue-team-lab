@@ -1,0 +1,34 @@
+[Incident 1]
+
+Event:
+Suspicious local account creation detected.
+
+Command:
+net user security_test /add
+
+Potential Risk:
+Unauthorized persistence attempt or attacker account creation.
+
+Investigation:
+PowerShell activity reviewed and suspicious account creation identified.
+
+Recommended Action:
+Review local users and monitor endpoint activity.
+
+
+[Incident 2]
+
+Event:
+Encoded PowerShell command execution detected.
+
+Command:
+powershell -enc SGVsbG8=
+
+Potential Risk:
+Obfuscated PowerShell execution commonly associated with attacker techniques.
+
+Investigation:
+Encoded command execution observed in PowerShell terminal.
+
+Recommended Action:
+Inspect PowerShell activity and review process execution logs.

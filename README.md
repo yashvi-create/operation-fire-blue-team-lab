@@ -52,8 +52,5 @@ Skills Demonstrated:
 ### Suspicious Account Creation
 ![PowerShell Activity](powershell_encoded_command.png.png)
 
-### Encoded PowerShell Activity
-![PowerShell Activity](powershell_encoded_command.png.png)
-
 Author:
 Yashvi Thakar

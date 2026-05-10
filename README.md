@@ -53,7 +53,7 @@ Skills Demonstrated:
 ![PowerShell Activity](powershell_encoded_command.png.png)
 
 ### Wireshark Packet Capture
-![Wireshark Capture](wireshark_packet_capture.png.png)
+![Wireshark Capture](wireshark_packet_capture.png)
 
 Author:
 Yashvi Thakar

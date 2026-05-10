@@ -47,10 +47,10 @@ Skills Demonstrated:
 ![Sysmon Logs](sysmon_operational_logs.png.png)
 
 ### Suspicious Account Creation
-![Account Creation](account_creation_event.png)
+![PowerShell Activity](powershell_encoded_command.png.png)
 
 ### Encoded PowerShell Activity
-![PowerShell Activity](powershell_encoded_command.png)
+![PowerShell Activity](powershell_encoded_command.png.png)
 
 Author:
 Yashvi Thakar

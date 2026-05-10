@@ -43,6 +43,9 @@ Skills Demonstrated:
 
 ## Screenshots
 
+### account_creation_event.png
+![Account Creation](security_test_user_creation.png.png)
+
 ### Sysmon Operational Logs
 ![Sysmon Logs](sysmon_operational_logs.png.png)
 

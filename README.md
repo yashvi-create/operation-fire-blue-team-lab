@@ -52,5 +52,8 @@ Skills Demonstrated:
 ### Suspicious Account Creation
 ![PowerShell Activity](powershell_encoded_command.png.png)
 
+### Wireshark Packet Capture
+![Wireshark Capture](wireshark_packet_capture.png.png)
+
 Author:
 Yashvi Thakar

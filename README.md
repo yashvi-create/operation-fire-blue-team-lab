@@ -41,5 +41,16 @@ Skills Demonstrated:
 - Virtual lab setup
 - Security monitoring basics
 
+## Screenshots
+
+### Sysmon Operational Logs
+![Sysmon Logs](sysmon_operational_logs.png)
+
+### Suspicious Account Creation
+![Account Creation](account_creation_event.png)
+
+### Encoded PowerShell Activity
+![PowerShell Activity](powershell_encoded_command.png)
+
 Author:
 Yashvi Thakar

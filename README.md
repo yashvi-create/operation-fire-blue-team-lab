@@ -55,5 +55,8 @@ Skills Demonstrated:
 ### Wireshark Packet Capture
 ![Wireshark Capture](wireshark_packet_capture.png)
 
+## Blue Team Architecture Diagram
+![Architecture Diagram](operation_fire_architecture.png)
+
 Author:
 Yashvi Thakar

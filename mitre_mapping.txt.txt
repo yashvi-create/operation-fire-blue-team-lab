@@ -1,0 +1,42 @@
+Operation Fire – MITRE ATT&CK Mapping
+
+Technique 1:
+T1059.001 – PowerShell
+
+Description:
+Encoded PowerShell commands were executed during the simulation to mimic suspicious script execution behavior commonly used by attackers.
+
+Observed Activity:
+powershell -enc SGVsbG8=
+
+
+Technique 2:
+T1136.001 – Local Account Creation
+
+Description:
+Suspicious local user accounts were created to simulate unauthorized persistence or attacker-controlled accounts.
+
+Observed Activity:
+net user security_test /add
+net user hacker_test /add
+
+
+Technique 3:
+T1049 – System Network Connections Discovery
+
+Description:
+Network traffic analysis was performed using Wireshark to inspect active TCP and TLS communications.
+
+Observed Activity:
+Captured live packet traffic including encrypted outbound connections.
+
+
+Technique 4:
+T1082 – System Information Discovery
+
+Description:
+Basic system and user information commands were executed during the investigation process.
+
+Observed Activity:
+whoami
+ipconfig

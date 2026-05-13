@@ -1,34 +1,38 @@
-[Incident 1]
+Operation Fire – Incident Investigation Notes
 
-Event:
-Suspicious local account creation detected.
+Investigation Summary:
+During this Blue Team lab simulation, suspicious endpoint and network activities were generated and investigated using Sysmon, Event Viewer, PowerShell, and Wireshark.
 
-Command:
-net user security_test /add
+Observed Activities:
+1. Suspicious PowerShell encoded command execution.
+2. Unauthorized local user account creation.
+3. Multiple process creation and termination events.
+4. Active outbound network traffic observed in Wireshark.
+5. TLS and TCP communications captured during traffic analysis.
 
-Potential Risk:
-Unauthorized persistence attempt or attacker account creation.
+Indicators of Compromise (IOCs):
+- Encoded PowerShell execution attempt
+- Creation of suspicious local accounts:
+  • hacker_test
+  • security_test
+- High volume process telemetry events
+- Multiple outbound encrypted traffic sessions
 
-Investigation:
-PowerShell activity reviewed and suspicious account creation identified.
+Investigation Tools Used:
+- Sysmon
+- Windows Event Viewer
+- Wireshark
+- PowerShell
+- Kali Linux
+- VirtualBox
 
-Recommended Action:
-Review local users and monitor endpoint activity.
+Analysis Outcome:
+No real malware infection was detected. All suspicious activities were safely simulated in a controlled cybersecurity lab environment for learning and monitoring purposes.
 
-
-[Incident 2]
-
-Event:
-Encoded PowerShell command execution detected.
-
-Command:
-powershell -enc SGVsbG8=
-
-Potential Risk:
-Obfuscated PowerShell execution commonly associated with attacker techniques.
-
-Investigation:
-Encoded command execution observed in PowerShell terminal.
-
-Recommended Action:
-Inspect PowerShell activity and review process execution logs.
+Skills Practiced:
+- Endpoint monitoring
+- Event log investigation
+- IOC identification
+- Network traffic analysis
+- Security documentation
+- Blue Team workflow fundamentals

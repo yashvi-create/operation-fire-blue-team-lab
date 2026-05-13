@@ -1,0 +1,26 @@
+Future Improvements – Operation Fire Blue Team Lab
+
+Planned Future Integrations:
+1. Wazuh SIEM integration for centralized alert monitoring.
+2. Security Onion deployment for network intrusion detection.
+3. Velociraptor integration for endpoint forensic collection.
+4. TheHive case management integration for incident response workflow.
+5. Cortex IOC analysis integration for automated enrichment.
+6. Suricata IDS rule monitoring and alert generation.
+7. Zeek network metadata analysis.
+
+Potential Future Enhancements:
+- Automated alert correlation
+- Centralized SOC dashboard
+- Malware simulation testing
+- Persistence detection
+- Scheduled task monitoring
+- Registry modification detection
+- Advanced PowerShell logging
+- Threat hunting workflows
+
+Learning Goals:
+- Improve DFIR skills
+- Build enterprise-style monitoring pipeline
+- Practice SIEM investigations
+- Expand Blue Team detection capabilities

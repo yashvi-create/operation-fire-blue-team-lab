@@ -1,62 +1,148 @@
-Operation Fire – Blue Team Endpoint Monitoring Lab
+<div align="center">
 
-Project Overview:
-This project simulates a beginner Blue Team cybersecurity investigation environment using Windows, Kali Linux, Sysmon, PowerShell, and Event Viewer.
+# 🛡️ Operation Fire
+### Blue Team Endpoint Monitoring & Investigation Lab
+### *Detect. Investigate. Defend.* 🔐
 
-Objectives:
-- Simulate suspicious endpoint activity
-- Monitor endpoint telemetry
-- Investigate logs and events
-- Collect evidence screenshots
-- Document findings
+[![Kali Linux](https://img.shields.io/badge/Kali-Linux-557C94?style=for-the-badge&logo=kalilinux&logoColor=white)]()
+[![Sysmon](https://img.shields.io/badge/Sysmon-Monitoring-9b72d4?style=for-the-badge&logo=windows&logoColor=white)]()
+[![Wireshark](https://img.shields.io/badge/Wireshark-Packet_Analysis-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)]()
+[![PowerShell](https://img.shields.io/badge/PowerShell-Threat_Detection-5391FE?style=for-the-badge&logo=powershell&logoColor=white)]()
+[![Status](https://img.shields.io/badge/Lab-Active-brightgreen?style=for-the-badge)]()
 
-Tools Used:
-- Kali Linux
-- VirtualBox
-- Sysmon
-- Windows Event Viewer
-- PowerShell
+</div>
 
-Activities Performed:
-1. Installed Kali Linux virtual machine.
-2. Created simulated confidential business files.
-3. Simulated suspicious PowerShell execution.
-4. Simulated unauthorized account creation.
-5. Installed and configured Sysmon.
-6. Investigated endpoint telemetry in Event Viewer.
-7. Collected screenshots and incident evidence.
-8. Documented investigation findings.
+---
 
-Key Detection Events:
-- Event ID 1: Process creation
-- Event ID 5: Process termination
-- PowerShell command execution
-- Endpoint telemetry activity
+## 🔥 What is Operation Fire?
 
-Skills Demonstrated:
-- Blue Team fundamentals
-- Endpoint monitoring
-- Event log investigation
-- Incident documentation
-- Virtual lab setup
-- Security monitoring basics
+> *A hands-on Blue Team security lab simulating real-world endpoint monitoring, threat detection and incident investigation.*
 
-## Screenshots
+Operation Fire is a **beginner Blue Team cybersecurity lab** built to simulate how SOC analysts detect, monitor and investigate threats on real endpoints. Every screenshot in this repo is from a **live lab environment** — not theory, not tutorials — actual hands-on security work. 🛡️
 
-### account_creation_event.png
-![Account Creation](security_test_user_creation.png.png)
+---
 
-### Sysmon Operational Logs
-![Sysmon Logs](sysmon_operational_logs.png.png)
+## 🏗️ Lab Architecture
 
-### Suspicious Account Creation
-![PowerShell Activity](powershell_encoded_command.png.png)
+<div align="center">
+<img src="operation_fire_architecture_png.png" alt="Operation Fire Architecture" width="100%" />
+</div>
 
-### Wireshark Packet Capture
-![Wireshark Capture](wireshark_packet_capture.png)
+```
+Kali Linux VM (Attacker)
+        ↓
+Windows Endpoint (Target)
+        ↓
+Sysmon Monitoring (Event Collection)
+        ↓
+Windows Event Viewer (Log Analysis)
+        ↓  
+Wireshark (Network Traffic Analysis)
+        ↓
+Incident Documentation (SOC Report)
+```
 
-## Blue Team Architecture Diagram
-![Architecture Diagram](operation_fire_architecture.png.png)
+---
 
-Author:
-Yashvi Thakar
+## 🔬 Lab Evidence & Screenshots
+
+### 🟣 PowerShell Encoded Command Detection
+<img src="powershell_encoded_command_png.png" alt="PowerShell Encoded Command" width="100%" />
+
+> Detected a **base64 encoded PowerShell command** (`powershell -enc`) — a common attacker technique to obfuscate malicious scripts. Identified and documented as suspicious activity. ⚠️
+
+---
+
+### 📋 Sysmon Operational Logs — 604 Events Captured
+<img src="sysmon_operational_logs_png.png" alt="Sysmon Operational Logs" width="100%" />
+
+> Sysmon captured **604 operational events** including Process Create (Event ID 1) and Process Terminate (Event ID 5) events. Monitored in real time to detect anomalous process behaviour. 🔍
+
+---
+
+### 🌐 Wireshark Packet Capture — Live Network Analysis
+<img src="wireshark_packet_capture.png" alt="Wireshark Packet Capture" width="100%" />
+
+> Captured and analysed live network traffic including **TCP retransmissions, TLSv1.2 application data, and UDP streams** to port 443. Identified packet anomalies and documented findings. 📡
+
+---
+
+### 👤 Account Creation Event — Simulated Attack
+<img src="account_creation_event_png.png" alt="Account Creation Event" width="100%" />
+
+> Simulated a **privilege escalation attack** by creating a rogue user account (`net user hacker_test /add`). Verified the event was captured and logged for investigation. 🚨
+
+---
+
+## 🛠️ Tools & Technologies
+
+| Tool | Purpose |
+|---|---|
+| 🐉 **Kali Linux VM** | Attack simulation environment |
+| 🪟 **Windows Endpoint** | Target machine for monitoring |
+| 👁️ **Sysmon** | Deep endpoint event logging |
+| 📋 **Windows Event Viewer** | Log analysis and investigation |
+| 🦈 **Wireshark** | Network packet capture & analysis |
+| 💻 **PowerShell** | Threat simulation & detection scripting |
+
+---
+
+## 🎯 What I Investigated
+
+- 🔴 **Encoded PowerShell commands** — obfuscated script execution detection
+- 🔴 **Rogue account creation** — privilege escalation simulation
+- 🟠 **Sysmon process events** — 604 events captured and analysed
+- 🟠 **Network traffic anomalies** — TCP/UDP packet analysis via Wireshark
+- 🟡 **TLSv1.2 encrypted traffic** — application data flow monitoring
+
+---
+
+## 📂 Project Structure
+
+```
+operation-fire-blue-team-lab/
+│
+├── screenshots/
+│   ├── operation_fire_architecture_png.png
+│   ├── powershell_encoded_command_png.png
+│   ├── sysmon_operational_logs_png.png
+│   ├── wireshark_packet_capture.png
+│   └── account_creation_event_png.png
+│
+├── docs/
+│   └── incident-report.md        # SOC investigation findings
+│
+└── README.md
+```
+
+---
+
+## 💡 What I Learned
+
+- Setting up a **Blue Team lab environment** from scratch
+- Configuring **Sysmon** for deep endpoint monitoring
+- Detecting **encoded PowerShell attacks** used by real threat actors
+- Analysing **live network traffic** with Wireshark
+- Simulating and detecting **account creation attacks**
+- Documenting findings like a **real SOC analyst**
+
+---
+
+## 🔐 Key Takeaway
+
+> Most cybersecurity beginners only read theory. This lab proves hands-on detection skills — the same skills SOC analysts use every single day in real enterprise environments.
+
+---
+
+## 👩‍💻 Built By
+
+<div align="center">
+
+**Yashvi Thakar** — Cloud & DevOps Engineer | Cybersecurity Enthusiast
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-yashvithakar-7c5cbf?style=flat&logo=linkedin)](https://www.linkedin.com/in/yashvithakar/)
+[![GitHub](https://img.shields.io/badge/GitHub-yashvi--create-9b72d4?style=flat&logo=github)](https://github.com/yashvi-create)
+
+*Build. Automate. Repeat.* ☁️✨
+
+</div>

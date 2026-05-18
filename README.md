@@ -25,7 +25,7 @@ Operation Fire is a **beginner Blue Team cybersecurity lab** built to simulate h
 ## 🏗️ Lab Architecture
 
 <div align="center">
-<img src="operation_fire_architecture_png.png" alt="Operation Fire Architecture" width="100%" />
+<img src="operation_fire_architecture.png.png" alt="Operation Fire Architecture" width="100%" />
 </div>
 
 ```
@@ -47,14 +47,14 @@ Incident Documentation (SOC Report)
 ## 🔬 Lab Evidence & Screenshots
 
 ### 🟣 PowerShell Encoded Command Detection
-<img src="powershell_encoded_command_png.png" alt="PowerShell Encoded Command" width="100%" />
+<img src="powershell_encoded_command.png.png" alt="PowerShell Encoded Command" width="100%" />
 
 > Detected a **base64 encoded PowerShell command** (`powershell -enc`) — a common attacker technique to obfuscate malicious scripts. Identified and documented as suspicious activity. ⚠️
 
 ---
 
 ### 📋 Sysmon Operational Logs — 604 Events Captured
-<img src="sysmon_operational_logs_png.png" alt="Sysmon Operational Logs" width="100%" />
+<img src="sysmon_operational_logs.png.png" alt="Sysmon Operational Logs" width="100%" />
 
 > Sysmon captured **604 operational events** including Process Create (Event ID 1) and Process Terminate (Event ID 5) events. Monitored in real time to detect anomalous process behaviour. 🔍
 
@@ -68,7 +68,7 @@ Incident Documentation (SOC Report)
 ---
 
 ### 👤 Account Creation Event — Simulated Attack
-<img src="account_creation_event_png.png" alt="Account Creation Event" width="100%" />
+<img src="account_creation_event.png.png" alt="Account Creation Event" width="100%" />
 
 > Simulated a **privilege escalation attack** by creating a rogue user account (`net user hacker_test /add`). Verified the event was captured and logged for investigation. 🚨
 
